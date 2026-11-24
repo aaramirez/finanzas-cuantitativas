@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Finanzas cuantitativas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Los modelos matemáticos de las finanzas con datos reales: el portafolio de Markowitz, el CAPM y los modelos de factores, el cálculo estocástico aplicado, Black-Scholes y su derivación, Monte Carlo, la volatilidad con GARCH, la cointegración y los modelos de tasas, en R y en Python.">
+<meta name="description" content="Los modelos de las finanzas y la infraestructura que los hace funcionar: datos de mercado y su limpieza, Markowitz, CAPM y factores, Black-Scholes y el cálculo estocástico, Monte Carlo, GARCH, cointegración y tasas, con QuantLib, cálculo en paralelo y en GPU, motores de valoración e investigación reproducible que llega a producción.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
@@ -31,16 +31,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header class="hero">
   <span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span>
-  <h1>De una serie de precios a un modelo que pone precio, mide el riesgo y elige la cartera</h1>
-  <p class="lede">Detrás de cada cartera optimizada, cada opción cotizada y cada pronóstico de volatilidad hay un modelo matemático con supuestos que a veces se cumplen y a veces fallan de forma espectacular. Este curso construye esos modelos desde los datos, deriva las fórmulas que la industria usa todos los días y los pone a prueba contra los precios reales, con laboratorios donde se mueve un parámetro y se ve el modelo reaccionar.</p>
+  <h1>De una serie de precios a un motor que pone precio, mide el riesgo y elige la cartera, en producción</h1>
+  <p class="lede">Detrás de cada cartera optimizada, cada opción cotizada y cada pronóstico de volatilidad hay un modelo matemático y una infraestructura que lo alimenta con datos limpios, lo calcula en miles de núcleos y lo sirve a la mesa de operaciones antes de que cambie el precio. Este curso deriva las fórmulas que la industria usa todos los días, las programa con las bibliotecas que usa la industria y las lleva del cuaderno de investigación a un motor de valoración que se puede probar, versionar y vigilar.</p>
 </header>
 
 <section>
   <h2>Cómo usar este curso</h2>
   <div class="prose">
-    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
-    <p><b>Para quién es.</b> Estudiantes de los últimos años de ingeniería, economía, matemática o física, y profesionales cuantitativos. Hace falta cálculo diferencial e integral, álgebra lineal (matrices), probabilidad (variables aleatorias, normal, esperanza) y saber programar un poco en Python o R. Los instrumentos y la intuición del portafolio están en Inversiones; la teoría del movimiento browniano, en Procesos estocásticos; ARIMA, en Series de tiempo; los generadores de números aleatorios, en Simulación; y el VaR y las pruebas de estrés, en Gestión de riesgos. Este curso es educativo: no es una recomendación de inversión.</p>
-    <p><b>Cómo está hecho.</b> Un mismo universo de datos recorre el curso: precios históricos públicos de una docena de acciones, un índice de mercado, la curva de tasas del Tesoro de EE. UU. y los factores de Fama y French. Con ellos se estiman los rendimientos, se arma la frontera eficiente, se prueba el CAPM, se calibra un GARCH y se valoran opciones. Los laboratorios corren en la página con datos históricos o simulados; las prácticas se hacen en Python o en R, con el código de cada capítulo. Los casos públicos (el lunes negro de 1987, LTCM, el terremoto cuantitativo de 2007 y la cópula gaussiana en 2008) aparecen donde enseñan algo.</p>
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 18 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Estudiantes de los últimos años de ingeniería, economía, matemática o física, profesionales cuantitativos e ingenieros que construyen plataformas financieras. Hace falta cálculo diferencial e integral, álgebra lineal (matrices), probabilidad (variables aleatorias, normal, esperanza) y saber programar en Python o R. Los instrumentos y la intuición del portafolio están en Inversiones; la teoría del movimiento browniano, en Procesos estocásticos; ARIMA, en Series de tiempo; el VaR, las pruebas de estrés y la plataforma de riesgos, en Gestión de riesgos; y el cálculo paralelo a fondo, en Computación paralela y GPU. Este curso es educativo: no es una recomendación de inversión.</p>
+    <p><b>Cómo está hecho.</b> Un mismo universo de datos recorre el curso: precios históricos públicos de una docena de acciones, un índice de mercado, la curva de tasas del Tesoro de EE. UU. y los factores de Fama y French. Con ellos se construye, capítulo a capítulo, una pequeña biblioteca cuantitativa en Python: empieza como un cuaderno que descarga y limpia datos, gana un optimizador de carteras, una calculadora de opciones, un motor de Monte Carlo que corre en paralelo y una curva de tasas con QuantLib, y termina como un servicio de valoración con pruebas, versiones y monitoreo. Los laboratorios corren en la página con datos históricos o simulados; las prácticas usan Python o R y bibliotecas de código abierto (`pandas`, `numpy`, `cvxpy`, `statsmodels`, `arch`, QuantLib). Las plataformas comerciales aparecen solo como ejemplos del mercado, y los casos públicos (el lunes negro de 1987, LTCM, el terremoto cuantitativo de 2007, la cópula gaussiana en 2008) donde enseñan algo.</p>
   </div>
 </section>
 
@@ -50,42 +50,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </details>
 
-<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Datos financieros</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Datos e infraestructura cuantitativa</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="datos-financieros-en-r-y-python"><span class="n">01</span><b>Datos financieros en R y Python</b><p>De dónde salen los datos públicos, cómo se ajustan los precios y cómo se pasa de precios a rendimientos sin errores.</p></div>
-    <div class="mod soon" data-id="hechos-estilizados"><span class="n">02</span><b>Cómo se comportan los rendimientos: los hechos estilizados</b><p>Colas pesadas, volatilidad que se agrupa y rendimientos casi impredecibles: lo que todo modelo debe respetar.</p></div>
+    <div class="mod soon" data-id="la-pila-cuantitativa"><span class="n">01</span><b>El taller de un *quant*: la pila tecnológica cuantitativa</b><p>Qué hace un equipo cuantitativo, con qué herramientas trabaja y cómo viaja un modelo desde la idea hasta la mesa de operaciones.</p></div>
+    <div class="mod soon" data-id="datos-de-mercado"><span class="n">02</span><b>Datos de mercado y de referencia: fuentes, formatos y almacenamiento</b><p>De dónde salen los precios, cómo se identifican los instrumentos y cómo se guardan series de millones de filas para consultarlas rápido.</p></div>
+    <div class="mod soon" data-id="limpieza-y-calidad-de-datos"><span class="n">03</span><b>Limpiar, validar y versionar datos financieros</b><p>Errores, huecos, eventos corporativos y sesgos que arruinan un modelo, y las pruebas automáticas que los atrapan antes.</p></div>
   </div>
 </details>
 
-<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Portafolio y equilibrio</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Rendimientos, portafolio y factores</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="portafolio-de-markowitz"><span class="n">03</span><b>El portafolio de Markowitz</b><p>La optimización de media y varianza con matrices: la frontera eficiente, la cartera tangente y su fragilidad.</p></div>
-    <div class="mod soon" data-id="capm"><span class="n">04</span><b>El CAPM: derivación y pruebas</b><p>Si todos invierten como Markowitz, el precio del riesgo es la beta: derivación, estimación y lo que dicen los datos.</p></div>
-    <div class="mod soon" data-id="modelos-de-factores"><span class="n">05</span><b>Modelos de factores: APT, Fama-French y más</b><p>Varios riesgos sistemáticos en lugar de uno: la teoría del arbitraje, los factores de Fama y French y los riesgos de buscar factores.</p></div>
+    <div class="mod soon" data-id="hechos-estilizados"><span class="n">04</span><b>Cómo se comportan los rendimientos: los hechos estilizados</b><p>Colas pesadas, volatilidad que se agrupa y rendimientos casi impredecibles: lo que todo modelo debe respetar.</p></div>
+    <div class="mod soon" data-id="portafolio-de-markowitz"><span class="n">05</span><b>El portafolio de Markowitz y los optimizadores</b><p>La optimización de media y varianza con matrices, resuelta con un optimizador convexo: la frontera eficiente, la cartera tangente y su fragilidad.</p></div>
+    <div class="mod soon" data-id="capm-y-modelos-de-factores"><span class="n">06</span><b>El CAPM y los modelos de factores</b><p>Si todos invierten como Markowitz, el precio del riesgo es la beta; cuando los datos no alcanzan, aparecen los factores de Fama y French.</p></div>
   </div>
 </details>
 
 <details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Tiempo continuo y opciones</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="calculo-estocastico-aplicado"><span class="n">06</span><b>Cálculo estocástico aplicado</b><p>El movimiento browniano, la integral y el lema de Itô, y el movimiento browniano geométrico como modelo de precios.</p></div>
-    <div class="mod soon" data-id="black-scholes"><span class="n">07</span><b>Black-Scholes: derivación y fórmula</b><p>La cartera que elimina el riesgo, la ecuación diferencial que resulta, su solución y los supuestos que la sostienen.</p></div>
-    <div class="mod soon" data-id="griegas-y-volatilidad-implicita"><span class="n">08</span><b>Las griegas, la cobertura dinámica y la volatilidad implícita</b><p>Delta, gamma, vega y theta; cubrir una opción día a día; y la sonrisa de volatilidad que contradice el modelo.</p></div>
+    <div class="mod soon" data-id="calculo-estocastico-aplicado"><span class="n">07</span><b>Cálculo estocástico aplicado</b><p>El movimiento browniano, la integral y el lema de Itô, el movimiento browniano geométrico y cómo se simula en el computador.</p></div>
+    <div class="mod soon" data-id="black-scholes"><span class="n">08</span><b>Black-Scholes: derivación, fórmula y código</b><p>La cartera que elimina el riesgo, la ecuación que resulta, su solución y cómo la implementa una biblioteca de valoración.</p></div>
+    <div class="mod soon" data-id="griegas-y-volatilidad-implicita"><span class="n">09</span><b>Griegas, cobertura dinámica y la superficie de volatilidad</b><p>Delta, gamma, vega y theta calculadas de tres formas, la cobertura día a día y la superficie de volatilidad que se arma con precios del mercado.</p></div>
   </div>
 </details>
 
-<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Simulación, volatilidad y cointegración</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Cálculo numérico a escala</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="monte-carlo"><span class="n">09</span><b>Monte Carlo en finanzas</b><p>Valorar por simulación las opciones sin fórmula, medir el error y reducirlo.</p></div>
-    <div class="mod soon" data-id="volatilidad-garch"><span class="n">10</span><b>Volatilidad: de la histórica a GARCH</b><p>Medir y pronosticar una volatilidad que cambia: ventanas móviles, EWMA, ARCH, GARCH y sus variantes asimétricas.</p></div>
-    <div class="mod soon" data-id="cointegracion-y-trading-de-pares"><span class="n">11</span><b>Cointegración y trading de pares</b><p>Dos precios que deambulan pero no se separan: probar la cointegración y convertir el diferencial en una estrategia.</p></div>
+    <div class="mod soon" data-id="monte-carlo"><span class="n">10</span><b>Monte Carlo en finanzas</b><p>Valorar por simulación las opciones sin fórmula, medir el error y reducirlo.</p></div>
+    <div class="mod soon" data-id="metodos-numericos-y-calibracion"><span class="n">11</span><b>Árboles, diferencias finitas y calibración de modelos</b><p>Resolver la ecuación de valoración en una malla, valorar opciones americanas y ajustar los parámetros de un modelo a los precios del mercado.</p></div>
+    <div class="mod soon" data-id="computo-paralelo-y-gpu"><span class="n">12</span><b>Cálculo en paralelo, GPU y diferenciación automática</b><p>Cómo se valoran millones de escenarios en minutos: vectorizar, compilar, repartir entre núcleos y máquinas, usar la GPU y calcular todas las griegas de una vez.</p></div>
   </div>
 </details>
 
-<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Tasas y los límites de los modelos</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Volatilidad, pares y tasas</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="modelos-de-tasas"><span class="n">12</span><b>Modelos de tasas de interés</b><p>La tasa corta como proceso estocástico: Vasicek, CIR y Hull-White, y su calibración a la curva.</p></div>
-    <div class="mod soon" data-id="derivados-de-tasas"><span class="n">13</span><b>Valorar derivados de tasas</b><p>Caps, floors y swaptions con el modelo de Black, y el árbol de tasas para los bonos con opciones.</p></div>
-    <div class="mod soon" data-id="riesgo-de-modelo"><span class="n">14</span><b>Cuando el modelo falla: riesgo de modelo</b><p>Supuestos que se rompen, correlaciones que cambian y modelos usados fuera de su terreno: LTCM y la cópula gaussiana.</p></div>
+    <div class="mod soon" data-id="volatilidad-garch"><span class="n">13</span><b>Volatilidad: de la histórica a GARCH</b><p>Medir y pronosticar una volatilidad que cambia: ventanas móviles, EWMA, ARCH, GARCH y sus variantes asimétricas, recalculados cada día.</p></div>
+    <div class="mod soon" data-id="cointegracion-y-trading-de-pares"><span class="n">14</span><b>Cointegración y trading de pares</b><p>Dos precios que deambulan pero no se separan: probar la cointegración y convertir el diferencial en una señal.</p></div>
+    <div class="mod soon" data-id="curvas-y-modelos-de-tasas"><span class="n">15</span><b>Curvas, modelos y derivados de tasas de interés</b><p>Construir la curva con QuantLib, modelar la tasa corta con Vasicek, CIR y Hull-White, y valorar caps, floors y swaptions.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-6" open><summary><h2><span class="pn">Parte 6</span> De la investigación a la producción</h2><span class="cuenta" data-etapa-cuenta="6"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="motores-de-valoracion-y-riesgo"><span class="n">16</span><b>Motores de valoración y de riesgo: la arquitectura</b><p>Las piezas de un sistema que valora toda la cartera de una institución cada noche y en el día: instrumentos, datos de mercado, modelos, escenarios y resultados.</p></div>
+    <div class="mod soon" data-id="investigacion-reproducible-y-produccion"><span class="n">17</span><b>Investigación reproducible y el paso a producción</b><p>Del cuaderno al paquete con pruebas, versiones y monitoreo: lo que hace falta para que un resultado se pueda repetir y un modelo se pueda usar.</p></div>
+    <div class="mod soon" data-id="riesgo-de-modelo"><span class="n">18</span><b>Cuando el modelo falla: riesgo de modelo</b><p>Supuestos que se rompen, correlaciones que cambian, sobreajuste y modelos usados fuera de su terreno: LTCM y la cópula gaussiana.</p></div>
   </div>
 </details>
 
