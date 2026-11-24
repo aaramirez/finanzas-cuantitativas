@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Finanzas cuantitativas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Los modelos matemáticos de las finanzas con datos reales: el portafolio de Markowitz, el CAPM y los modelos de factores, el cálculo estocástico aplicado, Black-Scholes y su derivación, Monte Carlo, la volatilidad con GARCH, la cointegración y los modelos de tasas, en R y en Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Finanzas <b>cuantitativas</b></a><span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span>
+  <h1>De una serie de precios a un modelo que pone precio, mide el riesgo y elige la cartera</h1>
+  <p class="lede">Detrás de cada cartera optimizada, cada opción cotizada y cada pronóstico de volatilidad hay un modelo matemático con supuestos que a veces se cumplen y a veces fallan de forma espectacular. Este curso construye esos modelos desde los datos, deriva las fórmulas que la industria usa todos los días y los pone a prueba contra los precios reales, con laboratorios donde se mueve un parámetro y se ve el modelo reaccionar.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Estudiantes de los últimos años de ingeniería, economía, matemática o física, y profesionales cuantitativos. Hace falta cálculo diferencial e integral, álgebra lineal (matrices), probabilidad (variables aleatorias, normal, esperanza) y saber programar un poco en Python o R. Los instrumentos y la intuición del portafolio están en Inversiones; la teoría del movimiento browniano, en Procesos estocásticos; ARIMA, en Series de tiempo; los generadores de números aleatorios, en Simulación; y el VaR y las pruebas de estrés, en Gestión de riesgos. Este curso es educativo: no es una recomendación de inversión.</p>
+    <p><b>Cómo está hecho.</b> Un mismo universo de datos recorre el curso: precios históricos públicos de una docena de acciones, un índice de mercado, la curva de tasas del Tesoro de EE. UU. y los factores de Fama y French. Con ellos se estiman los rendimientos, se arma la frontera eficiente, se prueba el CAPM, se calibra un GARCH y se valoran opciones. Los laboratorios corren en la página con datos históricos o simulados; las prácticas se hacen en Python o en R, con el código de cada capítulo. Los casos públicos (el lunes negro de 1987, LTCM, el terremoto cuantitativo de 2007 y la cópula gaussiana en 2008) aparecen donde enseñan algo.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Datos financieros</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="datos-financieros-en-r-y-python"><span class="n">01</span><b>Datos financieros en R y Python</b><p>De dónde salen los datos públicos, cómo se ajustan los precios y cómo se pasa de precios a rendimientos sin errores.</p></div>
+    <div class="mod soon" data-id="hechos-estilizados"><span class="n">02</span><b>Cómo se comportan los rendimientos: los hechos estilizados</b><p>Colas pesadas, volatilidad que se agrupa y rendimientos casi impredecibles: lo que todo modelo debe respetar.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Portafolio y equilibrio</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="portafolio-de-markowitz"><span class="n">03</span><b>El portafolio de Markowitz</b><p>La optimización de media y varianza con matrices: la frontera eficiente, la cartera tangente y su fragilidad.</p></div>
+    <div class="mod soon" data-id="capm"><span class="n">04</span><b>El CAPM: derivación y pruebas</b><p>Si todos invierten como Markowitz, el precio del riesgo es la beta: derivación, estimación y lo que dicen los datos.</p></div>
+    <div class="mod soon" data-id="modelos-de-factores"><span class="n">05</span><b>Modelos de factores: APT, Fama-French y más</b><p>Varios riesgos sistemáticos en lugar de uno: la teoría del arbitraje, los factores de Fama y French y los riesgos de buscar factores.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Tiempo continuo y opciones</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="calculo-estocastico-aplicado"><span class="n">06</span><b>Cálculo estocástico aplicado</b><p>El movimiento browniano, la integral y el lema de Itô, y el movimiento browniano geométrico como modelo de precios.</p></div>
+    <div class="mod soon" data-id="black-scholes"><span class="n">07</span><b>Black-Scholes: derivación y fórmula</b><p>La cartera que elimina el riesgo, la ecuación diferencial que resulta, su solución y los supuestos que la sostienen.</p></div>
+    <div class="mod soon" data-id="griegas-y-volatilidad-implicita"><span class="n">08</span><b>Las griegas, la cobertura dinámica y la volatilidad implícita</b><p>Delta, gamma, vega y theta; cubrir una opción día a día; y la sonrisa de volatilidad que contradice el modelo.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Simulación, volatilidad y cointegración</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="monte-carlo"><span class="n">09</span><b>Monte Carlo en finanzas</b><p>Valorar por simulación las opciones sin fórmula, medir el error y reducirlo.</p></div>
+    <div class="mod soon" data-id="volatilidad-garch"><span class="n">10</span><b>Volatilidad: de la histórica a GARCH</b><p>Medir y pronosticar una volatilidad que cambia: ventanas móviles, EWMA, ARCH, GARCH y sus variantes asimétricas.</p></div>
+    <div class="mod soon" data-id="cointegracion-y-trading-de-pares"><span class="n">11</span><b>Cointegración y trading de pares</b><p>Dos precios que deambulan pero no se separan: probar la cointegración y convertir el diferencial en una estrategia.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Tasas y los límites de los modelos</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="modelos-de-tasas"><span class="n">12</span><b>Modelos de tasas de interés</b><p>La tasa corta como proceso estocástico: Vasicek, CIR y Hull-White, y su calibración a la curva.</p></div>
+    <div class="mod soon" data-id="derivados-de-tasas"><span class="n">13</span><b>Valorar derivados de tasas</b><p>Caps, floors y swaptions con el modelo de Black, y el árbol de tasas para los bonos con opciones.</p></div>
+    <div class="mod soon" data-id="riesgo-de-modelo"><span class="n">14</span><b>Cuando el modelo falla: riesgo de modelo</b><p>Supuestos que se rompen, correlaciones que cambian y modelos usados fuera de su terreno: LTCM y la cópula gaussiana.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/finanzas-cuantitativas" target="_blank" rel="noopener">github.com/aaramirez/finanzas-cuantitativas</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
